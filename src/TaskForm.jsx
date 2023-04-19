@@ -8,7 +8,8 @@ import {
   Select,
   Textarea,
   VStack,
-  HStack
+  HStack,
+  Flex
 } from '@chakra-ui/react';
 
 
@@ -35,7 +36,7 @@ const TaskForm = ({ addTask }) => {
 
     <Box as="form" onSubmit={handleSubmit} width="30%">
       <HStack>
-      <FormControl  width ='33%'>
+      <FormControl  width ='50%'>
         <FormLabel>Name:</FormLabel>
         <Input
           type="text"
@@ -47,7 +48,7 @@ const TaskForm = ({ addTask }) => {
       </FormControl>
 
      
-      <FormControl mb={4}width ='33%'>
+      <FormControl mb={4}width ='25%'>
         <FormLabel>Priority:</FormLabel>
         <Select
           value={priority}
@@ -60,7 +61,7 @@ const TaskForm = ({ addTask }) => {
         </Select>
       </FormControl>
 
-      <FormControl mb={4} width ='33%'>
+      <FormControl mb={4} width ='25%'>
         <FormLabel>State:</FormLabel>
         <Select value={state} onChange={(e) => setState(e.target.value)} bg='white'>
           <option value="New">New</option>
@@ -80,10 +81,11 @@ const TaskForm = ({ addTask }) => {
         />
       </FormControl>
 
-
-      <Button type="submit" bg= "#FBDE3F" fontWeight='bold' justifyContent='space-around'>
+      <Flex justifyContent='flex-end'>
+      <Button type="submit" bg= "#FBDE3F" fontWeight='bold' justifyContent='left'>
         Add Task
       </Button>
+      </Flex>
     </Box>
     </VStack>
   );
