@@ -28,17 +28,17 @@ const TaskList = ({ tasks, deleteTask }) => {
             
             <Select value={taskState} onChange={(e) => setState(e.target.value)} bg='white'>
               <option value="all">State</option>
-              <option value="new">New</option>
-              <option value="in_process">In Process</option>
-              <option value="finished">Finished</option>
+              <option value="New">New</option>
+              <option value="In Process">In Process</option>
+              <option value="Finished">Finished</option>
             </Select>
          
            
             <Select value={priority} onChange={(e) => setPriority(e.target.value)} bg='white'>
               <option value="all">Priority</option>
-              <option value="low">Low</option>
-              <option value="medium">Medium</option>
-              <option value="high">High</option>
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
             </Select>
             </HStack>
 
