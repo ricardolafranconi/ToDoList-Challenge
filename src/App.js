@@ -68,7 +68,7 @@ function App() {
       // position="sticky"
       // top={0}
       > 
-      <Image src={logo}/>
+      
       </Flex>
       <Flex  justifyContent="center" alignItems="center" flexDirection='column'>
       <Text fontSize="6xl">To-do List</Text>
