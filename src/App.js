@@ -73,7 +73,7 @@ function App() {
       <Flex  justifyContent="center" alignItems="center" flexDirection='column'>
       <Text fontSize="6xl">To-do List</Text>
       <Text fontWeight='extrabold' fontSize='3xl' marginBottom='30px' style={{textDecoration: 'underline', textUnderlinePosition: 'under', 
-      textDecorationColor: '#FBDE3F', textDecorationThickness: '0.5em',  textUnderlineOffset: '-0.22em'}}>COR TECHNICAL CHALLENGE
+      textDecorationColor: '#FBDE3F', textDecorationThickness: '0.5em',  textUnderlineOffset: '-0.22em'}}> TECHNICAL CHALLENGE
      
       </Text>
     </Flex>
